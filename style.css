@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: 100%;
+}
+section{
+    background-color: whitesmoke;
+}
+/* Navigation bar */
+  nav{
+    background-color: white;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 995;
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 75px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #222831;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  nav a:hover{
+    background-color: #f0f0f0;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 999;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  .NavigationBar li img{
+    width: 60%;
+    padding-top: 7px;
+  }
+  .NavigationBar{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+/* Herosection */
+.LandingPage{
+    height: 100%;
+    background-color: whitesmoke;
+}
+.gridLayout{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.Herosection{
+    display: flex;
+    gap: 20px;
+}
+.HerosectionContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 45%;
+    height: 100vh;
+    margin-top: 70px;
+}
+.ExploreTheWorld{
+    color: #F85E9F;
+    font-size: 15px;
+}
+.ExploreTheWorld img{
+    position: relative;
+    top: 5px;
+}
+.headingOfHero h1{
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+}
+.headingOfHero h1 span{
+    color: #F85E9F;
+    font-weight: bold;
+   
+}
+.contentOfHero p{
+    color:#191825;
+    font-size: 16px;
+}
+ .buttonOfHero button{
+    background-color:#5D50C6;
+    color: white;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 15px 25px;
+    border: none;
+    font-size: 18px;
+    filter: drop-shadow(0 0.5rem 0.25rem rgba(0, 0, 0, 0.5));
+} 
+.buttonOfHero button:hover{
+    background-color: black;
+}
+.HerosectionImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0 1rem 0.25rem rgba(0, 0, 0, 0.5));
+    width: 65%;
+}
+.HerosectionImage img{
+    width: 85%;
+    display: flex;
+    position: relative;
+}
+
+/* Who we are */
+.WhoWeAre{
+    height: 100%;
+    background-color:whitesmoke;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.WhoWeAre h4{
+    padding-top: 20px;
+    text-align: center;
+    color: #F85E9F;
+    font-weight: bolder;
+}
+.WhoWeAre h2{
+    text-align: center;
+    padding: 20px 0px;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+.Boxes{
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+.BoxOne,.BoxTwo,.BoxThree{
+    border: 2px solid white;
+    padding:40px 30px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.BoxOne:hover,.BoxTwo:hover,.BoxThree:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+/* dream location */
+.DreamLocationsection{
+    background-color: whitesmoke;
+    height: 100%;
+}
+.DreamLocation{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.DreamLocationImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+.DreamLocationImage img{
+    width: 100%;
+    filter: drop-shadow(0 1rem 0.25rem rgba(0, 0, 0, 0.5));
+}
+.DreamLocationContent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 40%;
+}
+.DreamLocationContent h4{
+    color: #F85E9F;
+    font-weight: bolder;
+}
+.DreamLocationContent h2{
+    font-size: 40px;
+}
+.DreamLocationContent p{
+    font-size: 16px;
+}
+.squares{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.SquaresRowOne,.SquaresRowTwo{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.squareOne,.squareTwo,.squareThree,.squareFour{
+   padding: 30px;
+   background-color: white;
+   border: 1px solid white;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   justify-content: center;
+   align-items: center;
+}
+.squareOne:hover,.squareTwo:hover,.squareThree:hover,.squareFour:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.squareOne h3,.squareTwo h3,.squareThree h3,.squareFour h3{
+   color: #FF5722;
+   font-size: 24px;
+}
+.squareOne h5,.squareTwo h5,.squareThree h5,.squareFour h5{
+    color:black;
+    font-size: 16px;
+ }
+
+/* BestServices */
+ .BestServices{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+ }
+ .BestServicesContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+ }
+ .BestServicesContent h3{
+    color: #F85E9F;
+ }
+ .BestServicesContent h2{
+    font-size: 40px;
+ }
+ .subBestServices{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+ }
+.subBestServicesOne,.subBestServicesTwo,.subBestServicesThree{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+.subBestServicesOne:hover,.subBestServicesTwo:hover,.subBestServicesThree:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.subBestServices2,.subBestServices4,.subBestServices6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.subBestServices2 h4,.subBestServices4 h4,.subBestServices6 h4{
+   font-size: 18px;
+}
+.BestServicesImage{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BestServicesImage img{
+    width: 90%;
+    filter: drop-shadow(0 1rem 0.25rem rgba(0, 0, 0, 0.5));
+}
+.TestimonialSection{
+    background-color:#F4A44F;
+}
+.reviews{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 0px;
+    position: relative;
+}
+.reviews h3{
+    color: #F85E9F;
+    font-weight: bolder;
+}
+.reviews h2{
+   font-size: 35px;
+}
+.ReviewerImage{
+    border-radius: 50%;
+    filter: drop-shadow(0 1rem 0.25rem rgba(0, 0, 0, 0.5));
+}
+.ReviwerName{
+    color: #FF5722;
+    font-size: 25px;
+}
+.ReviewerRole{
+    color: #191825;
+    font-size: 20px;
+    padding-top: 3px;
+}
+.ReviewerNameandRole{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.StartRating{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.fa-star{
+    color: #FACD49;
+    font-size: 20px;
+}
+.ActualReview{
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+}
+
+.fa-chevron-circle-left{
+    position: absolute;
+    left: 0;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.fa-chevron-circle-right{
+    position: absolute;
+    right: 0;
+    font-size: 40px;
+    color: #FF5722;
+    cursor: pointer;
+}
+.Pinky{
+    background-color: #fee0ec;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    border-radius: 40px;
+}
+#gridy{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.Pinky h4{
+    font-size: 18px;
+    color: #F85E9F;
+}
+.Pinky h2{
+    font-size: 40px;
+}
+.pinkyboxes{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    gap: 30px;
+}
+.pinkyboxes input{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.pinkyboxes button{
+    padding: 20px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #5D50C6;
+    color: white;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+.pinkyboxes button:hover{
+    background-color: black;
+}
+footer{
+    background-color: whitesmoke;
+}
+.FooterSection{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+}
+.FooterSectionImg{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.FooterSectionImg img{
+    width: 40%;
+}
+.FooterSectionCompany,.FooterSectionContact,.FooterSectionMeetus{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.FooterSectionCompany h3 ,.FooterSectionContact h3 ,.FooterSectionMeetus h3{
+    font-size: 20px;
+
+    
+}
+.FooterSectionCompany a ,.FooterSectionContact a{
+    text-decoration: none;
+}
+.FooterSectionCompany h6,.FooterSectionContact h6{
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+.FooterSectionCompany h6:hover,.FooterSectionContact h6:hover{
+    color: #5D50C6;
+}
+.FooterSectionMeetus h6{
+    font-weight: 600;
+    font-size: 18px;
+}
+.footerthree{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.footerBorder{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+}
+/* Animation */
+.HerosectionImage img ,.DreamLocationImage img ,.BestServicesImage img{
+    animation: floating ease 4s infinite;
+}
+@keyframes floating {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(0%, 2%);
+    }
+    50% {
+        transform: translate(0%, 0%);
+    }
+    75% {
+        transform: translate(0%, 2%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+.hideOnMobile::after ,.scrolling::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: #F85E9F;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+.hideOnMobile:hover::after ,.scrolling:hover::after{
+    transform: scaleX(1);
+}
+.hideOnMobile ,.scrolling{
+    position: relative;
+}
+
+@media screen and (max-width:1300px){
+      .HerosectionContent{
+        gap: 15px;
+      }
+      .headingOfHero h1{
+        font-size: 50px;
+      }
+}
+@media screen and (max-width:1000px){
+    .headingOfHero h1{
+        font-size: 40px;
+      } 
+      .hideOnMobile{
+        display: none;
+      }
+      .menu-button{
+        display: block;
+      }
+}
+@media screen and (max-width:900px) {
+    
+}
+@media(max-width: 800px){
+    .Herosection{
+        flex-direction: column;
+        height: 100%;
+        overflow-y: hidden;
+    }
+    .HerosectionContent{
+        height: 100%;
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .HerosectionImage,.HerosectionImage img{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    } 
+    .headingOfHero h1{
+        font-size: 25px;
+      } 
+
+   .DreamLocation{
+    flex-direction: column;
+   } 
+   .DreamLocationImage{
+    order: 2;
+    width: 100%;
+   }
+   .DreamLocationContent{
+    order: 1;
+    width: 100%;
+   }
+   .BestServices{
+    flex-direction: column;
+   }
+   .BestServicesContent{
+    width: 100%;
+}
+.BestServicesImage{
+    width: 100%;
+}
+.FooterSection{
+    flex-direction: column;
+    width: 100%;
+}
+.FooterSectionImg{
+    width: 100%;
+}
+.FooterSectionCompany,.FooterSectionContact,.FooterSectionMeetus{
+    width: 30%;
+}
+.footerthree{
+    display: flex;
+    flex-direction: row;
+}
+  }
+@media screen and (max-width:700px){
+    .pinkyboxes{
+        gap: 10px;
+    }
+  }
+@media screen and (max-width:500px) {
+      .Herosection{
+        gap: 0px;
+      }
+      .Boxes{
+        flex-direction: column;
+      }
+      .fa-chevron-circle-left,.fa-chevron-circle-right{
+        position: relative;
+      }
+      .ReviewerNameandRole{
+        flex-direction: column;
+      }
+      .pinkyboxes{
+        flex-direction: column;
+        width: 100%;
+      }
+      .footerthree{
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+      }
+      .FooterSectionCompany,.FooterSectionContact,.FooterSectionMeetus{
+        gap: 10px;
+    }
+}
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+    .squareOne,.squareTwo,.squareThree,.squareFour{
+        padding: 10px;
+    }
+    .SquaresRowOne,.SquaresRowTwo{
+        gap: 10px;
+    }
+  }
+  @media screen and (max-width:300px){
+    .subBestServicesOne,.subBestServicesTwo,.subBestServicesThree{
+        flex-direction: column;
+    }
+  }
